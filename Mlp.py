@@ -26,8 +26,7 @@ from sklearn.neural_network import MLPClassifier
 model=MLPClassifier(hidden_layer_sizes=(15,25,10),alpha=0.001,max_iter=250,activation='relu')
 
 
-#svc
-#model = svm.SVC()
+
 model.fit(features,y_train)
 
 features_test = cv.transform(z_test)
